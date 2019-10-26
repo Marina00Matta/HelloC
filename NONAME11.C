@@ -1,20 +1,25 @@
-#include<stdio.h>
+#include <stdio.h>
+#include <conio.h>
 int main()
 {
 int x,max,min, i=0;
+clrscr();
 printf("enter your first value");
 scanf("%d",&x);
-for (i=0;i<4;i++)
+max=x;
+min=x;
+for (i=0;i<4;i++) {
 printf("enter your next value");
 scanf("%d",&x);
 if (x>max)
-{
-x=max;
+{max=x;
 }
 if(x<min)
 {
-x=min;
+min=x;
 }
-printf("%d",max,min);
-return =0;
+}
+printf("min=%d & max=%d",min,max);
+getch();
+return 0;
 }
